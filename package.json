@@ -1,9 +1,24 @@
 {
   "name": "electron-typescript-react",
   "version": "0.0.1",
+  "license": "MIT",
+  "description": "Simple electron app with typescript and react",
   "main": ".webpack/main",
+  "author": {
+    "name": "ej",
+    "url": "https://github.com/edo92/electron-react-typescript"
+  },
+  "keywords": [
+    "electron boilerplate",
+    "electron react typescript",
+    "electron react",
+    "electron typescript"
+  ],
   "scripts": {
     "start": "cross-env NODE_ENV=development electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/**/*",
     "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src/**/*"
   },
