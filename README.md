@@ -1,6 +1,6 @@
 # Electron React Webpack Typescript Boilerplate
 
-A simple secure electron boilerplate using, React, Webpack & TypeScript.
+A simple secure electron boilerplate using, React, Webpack, TypeScript and electron-forge.
 
 <br>
 <br>
@@ -27,7 +27,7 @@ npm install
 
 <br />
 
-## Start : Development
+## Start
 
 Start electron application for development
 
