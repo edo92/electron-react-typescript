@@ -1,0 +1,39 @@
+{
+  "name": "electron-typesciprt-react",
+  "version": "0.0.1",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron-forge start"
+  },
+  "config": {
+    "forge": "./tools/forge/forge.config.js"
+  },
+  "dependencies": {
+    "@electron-forge/maker-rpm": "^6.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.1",
+    "@electron-forge/maker-deb": "^6.1.1",
+    "@electron-forge/maker-squirrel": "^6.1.1",
+    "@electron-forge/maker-zip": "^6.1.1",
+    "@electron-forge/plugin-webpack": "^6.1.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.10",
+    "@types/node": "^20.2.5",
+    "@types/react": "^18.2.8",
+    "@types/react-dom": "^18.2.4",
+    "@types/webpack-env": "^1.18.1",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.8.1",
+    "electron": "^25.0.1",
+    "fork-ts-checker-webpack-plugin": "^8.0.0",
+    "less-loader": "^11.1.2",
+    "node-loader": "^2.0.0",
+    "react-refresh": "^0.14.0",
+    "ts-loader": "^9.4.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.3",
+    "webpack": "^5.85.1"
+  }
+}

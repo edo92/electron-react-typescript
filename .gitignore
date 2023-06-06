@@ -1,0 +1,10 @@
+dist
+out
+.settings/
+.vscode/*
+node_modules
+.DS_Store
+Thumbs.db
+.env
+npm-debug.log
+yarn-error.log
