@@ -3,7 +3,6 @@
 A simple secure electron boilerplate using, React, Webpack, TypeScript and electron-forge.
 
 <br>
-<br>
 
 ## Clone the repository
 
