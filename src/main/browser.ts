@@ -5,7 +5,7 @@ declare const APP_WINDOW_WEBPACK_ENTRY: string;
 declare const APP_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
 
 export class Browser {
-  public static createWindow(): BrowserWindow {
+  public static create(): BrowserWindow {
     const browserWindow = new BrowserWindow({
       width: 800,
       height: 600,
@@ -30,5 +30,9 @@ export class Browser {
     browserWindow.on('ready-to-show', () => browserWindow.show());
     browserWindow.on('close', () => app.quit());
     return browserWindow;
+  }
+
+  public static get windowCount(): number {
+    return BrowserWindow.getAllWindows().length;
   }
 }

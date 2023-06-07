@@ -1,11 +1,11 @@
-import { app, BrowserWindow } from 'electron';
+import { app } from 'electron';
 import { Browser } from './browser';
 
-app.on('ready', Browser.createWindow);
+app.on('ready', Browser.create);
 
 app.on('activate', () => {
-  if (BrowserWindow.getAllWindows().length === 0) {
-    Browser.createWindow();
+  if (!Browser.windowCount) {
+    Browser.create();
   }
 });
 
