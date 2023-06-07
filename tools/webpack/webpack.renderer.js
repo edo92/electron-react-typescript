@@ -1,5 +1,5 @@
-const rules = require("./webpack.rules");
-const plugins = require("./webpack.plugins");
+const rules = require('./webpack.rules');
+const plugins = require('./webpack.plugins');
 
 module.exports = {
   module: {
@@ -7,8 +7,8 @@ module.exports = {
   },
   plugins: plugins,
   resolve: {
-    extensions: [".js", ".ts", ".jsx", ".tsx", ".css"],
+    extensions: ['.js', '.ts', '.jsx', '.tsx', '.css'],
   },
-  stats: "minimal",
-  devtool: "inline-source-map",
+  stats: 'minimal',
+  devtool: 'inline-source-map',
 };

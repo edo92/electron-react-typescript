@@ -1,11 +1,12 @@
 import { app, BrowserWindow } from 'electron';
-import { createAppWindow } from './window';
+import { Browser } from './browser';
+import './ipc';
 
-app.on('ready', createAppWindow);
+app.on('ready', Browser.createWindow);
 
 app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
-    createAppWindow();
+    Browser.createWindow();
   }
 });
 

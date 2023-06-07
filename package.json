@@ -19,8 +19,8 @@
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src/**/*",
-    "lint:fix": "eslint --fix --ext .js,.jsx,.ts,.tsx ./src/**/*"
+    "lint": "eslint \"src/**/*.{ts,tsx,js}\"",
+    "lint:fix": "eslint --fix  \"src/**/*.{ts,tsx,js}\""
   },
   "config": {
     "forge": "./tools/forge/forge.config.js"
