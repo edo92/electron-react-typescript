@@ -1,4 +1,5 @@
 import { app, BrowserWindow } from 'electron';
+import { RegisterIPC } from './ipc';
 
 declare const APP_WINDOW_WEBPACK_ENTRY: string;
 declare const APP_WINDOW_PRELOAD_WEBPACK_ENTRY: string;
@@ -24,9 +25,10 @@ export class Browser {
       },
     });
     browserWindow.loadURL(APP_WINDOW_WEBPACK_ENTRY);
+    RegisterIPC();
+
     browserWindow.on('ready-to-show', () => browserWindow.show());
     browserWindow.on('close', () => app.quit());
-
     return browserWindow;
   }
 }

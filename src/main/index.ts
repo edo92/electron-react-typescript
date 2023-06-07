@@ -1,6 +1,5 @@
 import { app, BrowserWindow } from 'electron';
 import { Browser } from './browser';
-import './ipc';
 
 app.on('ready', Browser.createWindow);
 
