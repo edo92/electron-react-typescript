@@ -1,16 +1,9 @@
 import { app } from 'electron';
 import { Browser } from './browser';
+import { RegisterIPC } from './ipc';
 
-app.on('ready', Browser.create);
-
-app.on('activate', () => {
-  if (!Browser.windowCount) {
-    Browser.create();
-  }
-});
-
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
+app.on('ready', () => {
+  Browser.create(() => {
+    RegisterIPC();
+  });
 });
